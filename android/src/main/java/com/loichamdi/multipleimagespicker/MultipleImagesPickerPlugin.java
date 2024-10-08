@@ -610,7 +610,7 @@ public class MultipleImagesPickerPlugin implements
         if (requestCode == REQUEST_CODE_CHOOSE && resultCode == Activity.RESULT_CANCELED) {
             finishWithError("CANCELLED", "The user has cancelled the selection");
         } else if (requestCode == REQUEST_CODE_CHOOSE && resultCode == Activity.RESULT_OK) {
-            List<Uri> photos = data.getParcelableArrayListExtra(INTENT_PATH);
+            List<Uri> photos = data.getParcelableArrayListExtra(FishBun.INTENT_PATH);
             if (photos == null) {
                 clearMethodCallAndResult();
                 return false;
