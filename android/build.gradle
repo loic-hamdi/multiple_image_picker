@@ -23,6 +23,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace "com.loichamdi.multipleimagespicker"
     compileSdkVersion 29
 
     defaultConfig {
